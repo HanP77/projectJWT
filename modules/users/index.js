@@ -1,8 +1,10 @@
 import express from 'express';
-// import Mongoclient from 'mongodb';
+import connection from '../connection/index';
 
 
 let users = express.Router();
+
+
 users.get('/' , (req, res) => {
 
 	res.status(200).send("users fonctionne")
