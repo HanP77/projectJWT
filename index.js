@@ -1,16 +1,29 @@
-// import * as calc from './calculation';
-// console.log(calc.sum(5, 9));
-
 import express from 'express';
-// Old js var express = require('express');
+import login from './modules/login/index';
+import users from './modules/users/index';
+import connection from './modules/connection/index';
 
-import router from './users/router';
+import bodyParser from 'body-parser';
+
 let app = express();
 
 
-app.use('/', router);
 
 
-app.listen('8080', () => {
-	console.log('Listening to port 8080')
+
+app.use(function (req, res, next) {
+	res.header(`Access-Control-Allow-Origin`, `*`);
+	res.header(`Access-Control-Allow-Methods`, `GET,PUT,POST,DELETE`);
+	res.header(`Access-Control-Allow-Headers`, `Content-Type`);
+	next();
 });
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
+
+app.use('/users', users);
+app.use('/login', login);
+
+
