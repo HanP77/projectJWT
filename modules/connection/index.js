@@ -54,26 +54,29 @@ let connection = () => {
 		app.get('/' , (req, res) => {
 			res.status(200).send("home fonctionne")
 		});
-		// users.post('/' , (req, res) => {
-		// 	let db = _client.db(dbName);
-		// 	let dbCol = db.collection('test')
-		// 	let user = {
-		// 		username: req.body.username,
-		// 		password : req.body.password,
-		// 	};
+		users.post('/' , (req, res) => {
+			let db = _client.db(dbName);
+			let dbCol = db.collection('test')
+			let user = {
+				username: req.body.username,
+				password : req.body.password,
+			};
 
-		// 	dbCol.insertOne(user, function (err, result){
-		// 		if(err) {
-		// 			res.status(404).send(err);
-		// 		} else {
-		// 			res.status(200).send('Ok');
-		// 			console.log(req.body.username);
-		// 		}
-		// 	});
-		// });
+			dbCol.insertOne(user, function (err, result){
+				if(err) {
+					res.status(404).send(err);
+				} else {
+					res.status(200).send('Ok');
+					console.log(req.body.username);
+				}
+			});
+		});
+		login.get('/' , (req, res) => {
+			res.status(200).send("login fonctionne")
+		});
 	})
 
 }
 
-export {_client};
+// export {_client};
 export default connection;
