@@ -1,6 +1,9 @@
 # projectJWT
 
-Nodemon user: npm run watch
-Ohers: npm run start
+Your Awesome project <br>
 
-Enjoy !
+First step: npm install <br>
+Second step: <br>
+            - Nodemon user: npm run watch <br>
+            - Ohers: npm run start <br>
+Third step: Enjoy !
