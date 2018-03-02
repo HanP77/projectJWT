@@ -1,6 +1,7 @@
 import express from 'express';
 import connection from '../connection/index';
 import Mongoclient from 'mongodb';
+import {_client} from '../../index';
 let users = express.Router();
 const url = 'mongodb://localhost:27017';
 const dbName = 'JWT';
