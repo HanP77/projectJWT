@@ -8,6 +8,7 @@ import config from '../login/config';
 let testing = express.Router();
 let app = express();
 app.set('superSecret', config.secret);
+
 testing.get('/' , (req, res) => {
 	res.status(200).send("testing fonctionne")
 });
