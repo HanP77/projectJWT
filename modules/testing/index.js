@@ -1,9 +1,9 @@
 import express from 'express';
 import connection from '../connection/index';
-import Mongoclient from 'mongodb';
-import {_client} from '../../index';
-import jwt from 'jsonwebtoken';
 import config from '../login/config';
+import {_client} from '../../index';
+import Mongoclient from 'mongodb';
+import jwt from 'jsonwebtoken';
 
 let testing = express.Router();
 let app = express();

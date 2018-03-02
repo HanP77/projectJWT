@@ -2,13 +2,13 @@ import express from 'express';
 import connection from '../connection/index';
 import Mongoclient from 'mongodb';
 import {_client} from '../../index';
+
 let users = express.Router();
 const url = 'mongodb://localhost:27017';
 const dbName = 'JWT';
 
-
 users.get('/' , (req, res) => {
-	res.status(200).send("users fonctionne")
+	res.status(200).send("users is working")
 });
 
 users.post('/' , (req, res) => {
@@ -23,11 +23,9 @@ users.post('/' , (req, res) => {
 		if(err) {
 			res.status(404).send(err);
 		} else {
-			res.status(200).send('Ok');
+			res.status(200).send('user created');
 		}
 	});
 });
-
-
 
 export default users ;

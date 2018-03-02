@@ -25,7 +25,7 @@ connection()
 	app.use('/login', login);
 	app.use('/testing', testing);
 	app.get('/' , (req, res) => {
-		res.status(200).send("home fonctionne")
+		res.status(200).send("Home is working")
 	});
 
 	app.listen(8000, function () {

@@ -10,7 +10,7 @@ const dbName = 'JWT';
 app.set('superSecret', config.secret);
 
 login.get('/' , (req, res) => {
-	res.status(200).send("login fonctionne")
+	res.status(200).send("login is working")
 });
 
 login.post('/test', function (req, res) {
