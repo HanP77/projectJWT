@@ -1,9 +1,13 @@
 # projectJWT
 
-Your Awesome project <br>
+Our Awesome project <br>
 
 First step: npm install <br>
 Second step: <br>
-            - Nodemon user: npm run watch <br>
+            - Nodemon users: npm run watch <br>
             - Ohers: npm run start <br>
+            <br>
 Third step: Enjoy !
+<br>
+<br>
+Credit: BEAUGUET Kevin, PERIES Vincent, AUBLET Loïc
