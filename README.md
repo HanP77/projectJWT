@@ -9,5 +9,6 @@ Second step: <br>
             <br>
 Third step: Enjoy !
 <br>
+ps: DataBaseName: 'JWT'
 <br>
 Credit: BEAUGUET Kevin, PERIES Vincent, AUBLET Loïc
