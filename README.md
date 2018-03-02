@@ -7,8 +7,8 @@ Second step: <br>
             - Nodemon users: npm run watch <br>
             - Ohers: npm run start <br>
             <br>
-Third step: Enjoy !
+Third step: Enjoy !<br>
 <br>
-ps: DataBaseName: 'JWT'
+ps: DataBaseName: 'JWT'<br>
 <br>
 Credit: BEAUGUET Kevin, PERIES Vincent, AUBLET Loïc
